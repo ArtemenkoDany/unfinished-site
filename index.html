@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://cdn.rawgit.com/SSENSE/vue-carousel/6823411d/dist/vue-carousel.min.js"></script>
+
+    <head>
+        <meta charset="utf-8">
+</div>
+
+        <one>
+            <div id="appp">
+                <carousel v-bind:autoplay="true" v-bind:loop="true">
+                    <slide>
+
+                    </slide>
+                    <slide>
+
+                    </slide>
+                    <slide>
+
+                    </slide>
+                    <slide>
+
+                    </slide>
+                    <slide>
+
+                    </slide>
+                </carousel>
+            </div>
+            <script type = "text/javascript">
+                var app=new Vue({
+                    el: "#appp",
+                    components: {
+                        'carousel': VueCarousel.Carousel,
+                        'slide': VueCarousel.Slide
+                                },
+                });
+
+            </script>
+        </one>
+
+        <two style="text-align: center;">
+             Welcome my website <br /><a href="html/about.html" >Home</a>   <a href="html/about.html" >About me</a>
+            <a href="html/about.html"> Portfolio</a>   <a href="html/about.html"> Prices</a>
+            <a href="html/about.html"> Info</a>   <a href="html/about.html"> Contacts</a>
+        </two>
+    </head>
+    <body>
+    <div id="naw">
+        <h2 style="text-align: center;">
+            About me
+        </h2>
+        <p style="text-align: center;">I am an photographer from Kiew, Ukraine. Now I am liwing in Bilbao, Spain</p>
+        <img src="https://cdn.mos.cms.futurecdn.net/WgVfGBQF4uhQCTjsqwakX6-1024-80.jpg.webp" alt="Italian Trulli"
+            width="1450" height="300">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <script src="{{ url_for('static', filename='routes.js') }}"></script>
+    </body>
+</html>
